@@ -6,6 +6,7 @@ stream cipher: encryption & decryption is done bit-by-bit
 symmetric cipher: encryption & decryption is done with the secret key
 Author: motarek
 """
+from os import urandom
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 
@@ -49,9 +50,13 @@ def caesar_decrypt(ciphertext, key): #__INPUT__#
     #__OUTPUT__#
     return plaintext
 
+# === helper functions === #
+def get_random_key():
+    return int(urandom(1).hex(), 16)%25
+
 # === demo === # 
 # parameters
-key = 8
+key = get_random_key()
 
 # encryption
 plaintext = "I love cryptography"

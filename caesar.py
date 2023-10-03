@@ -74,8 +74,8 @@ print(f"decrypted: {caesar_decrypt(ciphertext, key)}")
 [[ About Security Level ]]
 Security level of an algorithm is the number of operations required to break it, and it's measured by 'bits of security'
 Number of operations required to break an algorithm = 2**n, where n represents 'bits of security'
-Caesar Cipher ---> 2**4 + 8 = 24 --> pretty weak (breakable)
-AES-128: 128  ---> 2**128 --> after Biclique attack: 2*126.1
-AES-192: 192  ---> 2**192 --> after Biclique attack: 2*189.7
-AES-256: 256  ---> 2**256 --> after Biclique attack: 2*254.4
+Caesar Cipher ---> 2**4 + 8 = 24 operations --> weak against bruteforce attack
+AES-128: 128  ---> 2**128 operations --> after Biclique attack: 2*126.1
+AES-192: 192  ---> 2**192 operations --> after Biclique attack: 2*189.7
+AES-256: 256  ---> 2**256 operations --> after Biclique attack: 2*254.4
 """

@@ -2,10 +2,10 @@
 AES-128 Encryption/Decryption
 """
 
-from Crypto.Protocol.KDF import PBKDF2
+from Crypto.Protocol.KDF import PBKDF2      # pip install pycryptomoe
 from Crypto.Cipher import AES
-from Crypto.Util.Padding import pad, unpad
-from base64 import b64encode, b64decode
+from Crypto.Util.Padding import pad, unpad  # pip install crypto-utils
+from base64 import b64encode, b64decode     # pip install pybase64
 from os import urandom
 
 plaintext = pad(b"hellothere", 16)

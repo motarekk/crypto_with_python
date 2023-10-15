@@ -1,0 +1,11 @@
+[ commands for file encryption/decryption using openssl and AES-128 ]
+vim test.txt
+i
+hellothere
+:wq
+openssl aes-128-cbc -K "35829b804960385f360d9dbc464666a4" -iv "2f39100364d5a1b5b860ce5a645d0203" -in test.txt  -out test.enc
+xxd test.txt
+xxd test.enc
+openssl aes-128-cbc -K -d "35829b804960385f360d9dbc464666a4" -iv "2f39100364d5a1b5b860ce5a645d0203" -in test.enc  -out test.dec
+xxd test.dec
+cat test.dec

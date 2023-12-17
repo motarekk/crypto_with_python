@@ -37,3 +37,7 @@ A short course for AOU students
 [ Pratical resources ]
 - Course repository on GitHub: https://github.com/motarekk/crypto_with_python/
 - Cryptohack platform: https://cryptohack.org/
+
+[ Other links ]
+- YouTube (some sesions are online): https://www.youtube.com/watch?v=wIrHNBla4ns&list=PLeI2QhZHGbbgEeZI6eMS2jNXoqHhE9RFH
+- Medium (writeups): https://medium.com/@motarekk
